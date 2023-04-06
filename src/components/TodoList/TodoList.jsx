@@ -23,10 +23,10 @@ export default function TodoList() {
   };
 
   const handleUpdate = (updated) =>
-    setTodos(todos.map((t) => (t.id === updated.id ? updated : t)));
+    setTodos(todos.map((todo) => (todo.id === updated.id ? updated : todo)));
 
   const handleDelete = (deleted) =>
-    setTodos(todos.filter((t) => t.id !== deleted.id));
+    setTodos(todos.filter((todo) => todo.id !== deleted.id));
 
   return (
     <section>

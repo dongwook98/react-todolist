@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+
 export default function AddTodo({ onAdd }) {
   const [text, setText] = useState('');
+
   const handleChange = (e) => {
     setText(e.target.value);
   };
@@ -9,11 +11,12 @@ export default function AddTodo({ onAdd }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (text.trim().length === 0) {
-      return;
+      return; // 아무것도입력하지않으면 바로 리턴
     }
     onAdd({ id: uuidv4(), text, status: 'active' });
     setText('');
   };
+
   return (
     <form onSubmit={handleSubmit}>
       <input
@@ -26,3 +29,6 @@ export default function AddTodo({ onAdd }) {
     </form>
   );
 }
+
+// 투두 추가하는 컴포넌트
+// 유효성
