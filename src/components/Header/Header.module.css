@@ -1,8 +1,8 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
 }
 
 .filters {
@@ -11,7 +11,7 @@
 
 .filter {
   font-size: 1.4rem;
-  margin: 0.3rem;
+  margin: 0.3rem 2rem;
   text-transform: capitalize;
   background-color: transparent;
   color: var(--color-text);
