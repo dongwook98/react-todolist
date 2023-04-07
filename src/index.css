@@ -3,7 +3,7 @@
   --color-bg: #fdfffd;
   --color-grey: #d1d1d1;
   --color-text: white;
-  --color-accent: rgb(62, 174, 180);
+  --color-accent: rgb(221, 67, 119);
 }
 
 body {
@@ -39,4 +39,9 @@ code {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+button {
+  outline: none;
+  border: none;
 }
