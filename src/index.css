@@ -4,6 +4,7 @@
   --color-grey: #d1d1d1;
   --color-text: white;
   --color-accent: rgb(221, 67, 119);
+  --color-scrollbar: rgb(150, 243, 241);
 }
 
 body {
@@ -18,6 +19,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  accent-color: var(--color-accent);
+  color: var(--color-text);
   background-color: rgb(221, 67, 119);
 }
 
@@ -29,6 +34,10 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 code {
@@ -44,4 +53,20 @@ ul {
 button {
   outline: none;
   border: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-scrollbar);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(150, 217, 243);
 }
